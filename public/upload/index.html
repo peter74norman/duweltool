@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Duplexweld - File Uploader</title>
+        <style>
+            *,
+            input {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="data-form" enctype="multipart/form-data" method="post" action="/api/upload">
+            <h3>Data (JSON file)</h3>
+            <input name="data" type="file" />
+
+            <h3>PDF's</h3>
+            <input name="pdf" type="file" />
+
+            <h3>Password</h3>
+            <input name="password" type="password" />
+
+            <p><input type="submit" value="Send" /></p>
+        </form>
+    </body>
+</html>
